@@ -1,0 +1,40 @@
+body{
+margin: 0;
+background-color:#111 ;
+font-family: Arial;
+
+}
+.parent{
+display:grid;
+grid-template-columns: repeat(12,1fr);
+gap:12px;
+padding:20px;
+}
+.item{
+    background-color:#f4c400;
+    color:white;
+    font-size: 20px;
+    height:80px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+/* column spans */
+.item.span12{
+    grid-column: span 12;
+}
+.item.span6{
+    grid-column: span 6;
+}
+.item.span4{
+    grid-column: span 4;
+}
+.item.span3{
+    grid-column: span 3;
+}
+.item.span2{
+    grid-column: span 2;
+}
+.item.span1{
+    grid-column: span 1;
+}
